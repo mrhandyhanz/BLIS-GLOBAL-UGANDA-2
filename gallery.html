@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery & Media - ICRPlus</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon-32x32.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .bg-navy {
+            background-color: #0F172A;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50">
+
+    <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 px-10 py-6">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <img src="Assets/Logos/BLIS GLOBAL uganda.png" alt="BLIS Global Uganda" class="h-10">
+            </div>
+
+            <div class="hidden md:flex gap-8 text-sm font-semibold text-slate-500">
+                <a href="index.html" class="hover:text-blue-600">Home</a>
+                <a href="about.html" class="hover:text-blue-600">About</a>
+                <a href="program-details.html" class="hover:text-blue-600">Program Details</a>
+                <a href="gallery.html" class="hover:text-blue-600">News</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <button class="hidden md:block bg-blue-600 text-white px-6 py-2 rounded-full font-bold text-sm">Partner
+                    with us</button>
+
+                <button id="menu-btn" class="md:hidden text-slate-600">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 p-6 space-y-4 shadow-xl">
+            <a href="index.html" class="block font-bold text-slate-700">Home</a>
+            <a href="about.html" class="block font-bold text-slate-700">About</a>
+            <a href="program-details.html" class="block font-bold text-slate-700">Program Details</a>
+            <a href="gallery.html" class="block font-bold text-slate-700">News</a>
+            <button class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold">Partner with us</button>
+        </div>
+    </nav>
+
+    <header class="bg-navy py-20 text-center relative overflow-hidden">
+        <div class="relative z-10">
+            <h1 class="text-white text-5xl font-black mb-4">Gallery & Media</h1>
+            <p class="text-blue-300 tracking-widest uppercase text-xs font-bold">Witnessing the Innovation Journey</p>
+        </div>
+    </header>
+
+    <section class="py-12 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-8 flex flex-wrap justify-center gap-4">
+            <button class="bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-bold shadow-md">All Media</button>
+            <button
+                class="bg-slate-100 text-slate-600 hover:bg-blue-50 hover:text-blue-600 px-6 py-2 rounded-full text-sm font-bold transition">Robotics
+                Labs</button>
+            <button
+                class="bg-slate-100 text-slate-600 hover:bg-blue-50 hover:text-blue-600 px-6 py-2 rounded-full text-sm font-bold transition">Coding
+                Sessions</button>
+            <button
+                class="bg-slate-100 text-slate-600 hover:bg-blue-50 hover:text-blue-600 px-6 py-2 rounded-full text-sm font-bold transition">Student
+                Projects</button>
+            <button
+                class="bg-slate-100 text-slate-600 hover:bg-blue-50 hover:text-blue-600 px-6 py-2 rounded-full text-sm font-bold transition">Events</button>
+        </div>
+    </section>
+
+    <section class="py-20 max-w-7xl mx-auto px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+            <div class="relative group gallery-item overflow-hidden rounded-[2rem] h-[400px]">
+                <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80"
+                    class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                <div
+                    class="overlay absolute inset-0 bg-blue-900/60 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-8 text-white">
+                    <h4 class="font-bold text-lg">Robotics Lab</h4>
+                    <p class="text-xs opacity-80 uppercase tracking-widest">Level 02 Secondary</p>
+                </div>
+            </div>
+
+            <div class="relative group gallery-item overflow-hidden rounded-[2rem] h-[400px]">
+                <div class="absolute top-4 right-4 z-20 bg-blue-600 p-2 rounded-full text-white shadow-lg">
+                    <i data-lucide="play" class="w-4 h-4 fill-current"></i>
+                </div>
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80"
+                    class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                <div
+                    class="overlay absolute inset-0 bg-blue-900/60 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-8 text-white">
+                    <h4 class="font-bold text-lg">Software Showcase</h4>
+                    <p class="text-xs opacity-80 uppercase tracking-widest">Video Content</p>
+                </div>
+            </div>
+
+            <div class="relative group gallery-item overflow-hidden rounded-[2rem] h-[400px]">
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80"
+                    class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                <div
+                    class="overlay absolute inset-0 bg-blue-900/60 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-8 text-white">
+                    <h4 class="font-bold text-lg">Primary Coding</h4>
+                    <p class="text-xs opacity-80 uppercase tracking-widest">Level 01 Foundations</p>
+                </div>
+            </div>
+
+            <div class="relative group gallery-item overflow-hidden rounded-[2rem] h-[400px] md:col-span-2">
+                <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80"
+                    class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                <div
+                    class="overlay absolute inset-0 bg-blue-900/60 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-8 text-white">
+                    <h4 class="font-bold text-lg">Hackathon 2024</h4>
+                    <p class="text-xs opacity-80 uppercase tracking-widest">Global Competition</p>
+                </div>
+            </div>
+
+            <div class="relative group gallery-item overflow-hidden rounded-[2rem] h-[400px]">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80"
+                    class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                <div
+                    class="overlay absolute inset-0 bg-blue-900/60 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-8 text-white">
+                    <h4 class="font-bold text-lg">Team Collaboration</h4>
+                    <p class="text-xs opacity-80 uppercase tracking-widest">Soft Skills Training</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-navy text-white">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-4xl font-extrabold mb-2">In the News</h2>
+                    <p class="text-blue-300 opacity-80">ICRPlus making waves in Ugandan education.</p>
+                </div>
+                <button
+                    class="border border-white/20 px-6 py-2 rounded-full text-sm font-bold hover:bg-white/10 transition">View
+                    All News</button>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div
+                    class="p-8 bg-white/5 border border-white/10 rounded-3xl hover:bg-white/10 transition cursor-pointer group">
+                    <span class="text-blue-400 text-xs font-bold uppercase tracking-widest">May 12, 2025</span>
+                    <h3 class="text-xl font-bold mt-2 mb-4 group-hover:text-blue-300 transition">How BLIS Global is
+                        transforming STEM in Kampala.</h3>
+                    <p class="text-sm opacity-60 leading-relaxed mb-6">Discussing the roadmap for integrated coding
+                        curricula in private and public institutions across Uganda...</p>
+                    <span class="text-blue-400 font-bold flex items-center gap-2">Read Article <i
+                            data-lucide="arrow-right" class="w-4 h-4"></i></span>
+                </div>
+                <div
+                    class="p-8 bg-white/5 border border-white/10 rounded-3xl hover:bg-white/10 transition cursor-pointer group">
+                    <span class="text-blue-400 text-xs font-bold uppercase tracking-widest">April 05, 2025</span>
+                    <h3 class="text-xl font-bold mt-2 mb-4 group-hover:text-blue-300 transition">Ugandan Students build
+                        AI-powered farm robot.</h3>
+                    <p class="text-sm opacity-60 leading-relaxed mb-6">Highlighting the success of our Level 03 students
+                        at the National Innovation Awards...</p>
+                    <span class="text-blue-400 font-bold flex items-center gap-2">Read Article <i
+                            data-lucide="arrow-right" class="w-4 h-4"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 text-center">
+        <i data-lucide="instagram" class="w-12 h-12 mx-auto text-blue-600 mb-4"></i>
+        <h2 class="text-3xl font-extrabold text-blue-900 mb-2">Follow our Journey</h2>
+        <p class="text-slate-500 mb-10">@icrplus_uganda</p>
+        <div class="flex flex-wrap justify-center gap-2 opacity-80">
+            <div class="w-32 h-32 bg-slate-200 rounded-2xl overflow-hidden"><img
+                    src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=150"
+                    class="w-full h-full object-cover"></div>
+            <div class="w-32 h-32 bg-slate-200 rounded-2xl overflow-hidden"><img
+                    src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80&w=150"
+                    class="w-full h-full object-cover"></div>
+            <div class="w-32 h-32 bg-slate-200 rounded-2xl overflow-hidden"><img
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=150"
+                    class="w-full h-full object-cover"></div>
+            <div class="w-32 h-32 bg-slate-200 rounded-2xl overflow-hidden"><img
+                    src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=150"
+                    class="w-full h-full object-cover"></div>
+        </div>
+    </section>
+
+    <footer class="bg-navy py-12 text-white/60 text-center text-xs border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-8">
+            <p>© 2026 BLIS GLOBAL Uganda. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

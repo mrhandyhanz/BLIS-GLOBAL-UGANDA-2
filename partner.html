@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Partnership - ICRPlus</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon-32x32.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .bg-navy {
+            background-color: #0F172A;
+        }
+
+        .input-focus:focus {
+            outline: none;
+            border-color: #3B82F6;
+            ring: 2px;
+            ring-color: #BFDBFE;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50">
+
+    <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 px-10 py-6">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <img src="Assets/Logos/BLIS GLOBAL uganda.png" alt="BLIS Global Uganda" class="h-10">
+            </div>
+
+            <div class="hidden md:flex gap-8 text-sm font-semibold text-slate-500">
+                <a href="index.html" class="hover:text-blue-600">Home</a>
+                <a href="about.html" class="hover:text-blue-600">About</a>
+                <a href="program-details.html" class="hover:text-blue-600">Program Details</a>
+                <a href="gallery.html" class="hover:text-blue-600">News</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <button class="hidden md:block bg-blue-600 text-white px-6 py-2 rounded-full font-bold text-sm">Partner
+                    with us</button>
+
+                <button id="menu-btn" class="md:hidden text-slate-600">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 p-6 space-y-4 shadow-xl">
+            <a href="index.html" class="block font-bold text-slate-700">Home</a>
+            <a href="about.html" class="block font-bold text-slate-700">About</a>
+            <a href="program-details.html" class="block font-bold text-slate-700">Program Details</a>
+            <a href="gallery.html" class="block font-bold text-slate-700">News</a>
+            <button class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold">Partner with us</button>
+        </div>
+    </nav>
+    <header class="bg-navy py-16 text-center text-white">
+        <h1 class="text-4xl font-black mb-2">Connect & Stay Updated</h1>
+        <p class="text-blue-300 text-sm uppercase tracking-widest font-bold">Partnerships • Articles • Announcements</p>
+    </header>
+
+    <div class="max-w-7xl mx-auto px-8 py-20 grid lg:grid-cols-3 gap-16">
+
+        <div class="lg:col-span-2">
+            <div class="bg-white p-10 rounded-[2.5rem] shadow-xl shadow-slate-200/60 border border-slate-100">
+                <h2 class="text-3xl font-extrabold text-blue-900 mb-2">Partner With Us</h2>
+                <p class="text-slate-500 mb-10">Bring world-class coding and robotics to your institution. Fill out the
+                    form below and our team will reach out within 24 hours.</p>
+
+                <form id="partnershipForm" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-400 mb-2">Full Name</label>
+                            <input type="text" id="fullName" placeholder="John Doe" required
+                                class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 outline-none transition">
+                        </div>
+                        <div>
+                            <label
+                                class="block text-xs font-bold uppercase text-slate-400 mb-2">Organization/School</label>
+                            <input type="text" id="organization" placeholder="Greenwood Academy" required
+                                class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 outline-none transition">
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-400 mb-2">Email Address</label>
+                            <input type="email" id="email" placeholder="john@school.ug" required
+                                class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 outline-none transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-400 mb-2">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="+256..." required
+                                class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 outline-none transition">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-slate-400 mb-2">Interested Program</label>
+                        <select id="program"
+                            class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 outline-none transition appearance-none">
+                            <option>Primary Level Program (Ages 6-11)</option>
+                            <option>Secondary Level Program (Ages 12-17)</option>
+                            <option>Tertiary/Advanced Program</option>
+                            <option>Custom Workshop / Event</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-slate-400 mb-2">Message / Additional
+                            Details</label>
+                        <textarea id="message" rows="4" placeholder="How can we help you?"
+                            class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 outline-none transition"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full bg-blue-600 text-white font-bold py-5 rounded-2xl shadow-lg shadow-blue-500/30 hover:bg-blue-700 hover:-translate-y-1 transition-all">Submit
+                        Partnership Request</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="lg:col-span-1">
+            <h2 class="text-2xl font-extrabold text-blue-900 mb-8 flex items-center gap-2">
+                <i data-lucide="newspaper" class="text-blue-600"></i> Latest Articles
+            </h2>
+
+            <div class="space-y-8">
+                <article class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-2xl mb-4 h-48 bg-slate-200">
+                        <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&q=80"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <span
+                        class="text-[10px] font-bold uppercase tracking-widest text-blue-600 bg-blue-50 px-2 py-1 rounded">Innovation</span>
+                    <h3 class="font-bold text-blue-900 mt-2 group-hover:text-blue-600 transition">Preparing Ugandan
+                        Students for the AI Revolution</h3>
+                    <p class="text-xs text-slate-500 mt-2 line-clamp-2">How coding and robotics are becoming the new
+                        literacy for the next generation of engineers in Kampala.</p>
+                </article>
+
+                <article class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-2xl mb-4 h-48 bg-slate-200">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <span
+                        class="text-[10px] font-bold uppercase tracking-widest text-emerald-600 bg-emerald-50 px-2 py-1 rounded">Robotics</span>
+                    <h3 class="font-bold text-blue-900 mt-2 group-hover:text-blue-600 transition">5 Ways Robotics Builds
+                        Critical Thinking Skills</h3>
+                    <p class="text-xs text-slate-500 mt-2 line-clamp-2">Exploring the psychological benefits of hands-on
+                        hardware engineering for teenagers.</p>
+                </article>
+
+                <button
+                    class="w-full py-4 border-2 border-slate-200 rounded-xl text-slate-500 font-bold text-sm hover:bg-slate-100 transition">View
+                    All News</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-navy py-12 text-center border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-3 opacity-80">
+                    <img src="Assets/Logos/ICRP.png" alt="ICRPlus" class="h-8 brightness-0 invert">
+                    <span class="font-bold text-white text-sm opacity-60">by</span>
+                    <img src="Assets/Logos/BLIS.png" alt="BLIS Global" class="h-8 brightness-0 invert">
+                </div>
+                <div class="flex gap-6 text-white/40 text-sm">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                    <a href="#" class="hover:text-white">Contact Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        lucide.createIcons();
+
+        document.getElementById('partnershipForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const fullName = document.getElementById('fullName').value;
+            const organization = document.getElementById('organization').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const program = document.getElementById('program').value;
+            const message = document.getElementById('message').value;
+
+            const subject = `Partnership Request from ${fullName}`;
+            // Encode the body properly for URL
+            const body = `Name: ${fullName}\nOrganization: ${organization}\nEmail: ${email}\nPhone: ${phone}\nProgram: ${program}\nMessage: ${message}`;
+
+            const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=blisglobaluganda@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+            // Open in a new tab
+            window.open(gmailUrl, '_blank');
+        });
+    </script>
+</body>
+
+</html>

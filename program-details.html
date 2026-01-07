@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Details - ICRPlus</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon-32x32.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .bg-navy {
+            background-color: #0F172A;
+        }
+
+        /* This ensures the giant numbers don't interfere with layout */
+        .watermark {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            font-size: 16rem;
+            font-weight: 900;
+            line-height: 1;
+            color: rgba(30, 64, 175, 0.05);
+            /* Very faint blue */
+            z-index: 0;
+            pointer-events: none;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-slate-900">
+
+    <!-- fixed the logo with ICRP plus -->
+    <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 px-10 py-6">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <img src="Assets/Logos/BLIS GLOBAL uganda.png" alt="BLIS Global Uganda" class="h-10">
+            </div>
+
+            <div class="hidden md:flex gap-8 text-sm font-semibold text-slate-500">
+                <a href="index.html" class="hover:text-blue-600">Home</a>
+                <a href="about.html" class="hover:text-blue-600">About</a>
+                <a href="program-details.html" class="hover:text-blue-600">Program Details</a>
+                <a href="gallery.html" class="hover:text-blue-600">News</a>
+            </div>
+            <!-- Modified the partner with us button to a link -->
+            <div class="flex items-center gap-4">
+                <a href="partner.html"
+                    class="hidden md:block bg-blue-600 text-white px-6 py-2 rounded-full font-bold text-sm">Partner
+                    with us</a>
+
+                <button id="menu-btn" class="md:hidden text-slate-600">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 p-6 space-y-4 shadow-xl">
+            <a href="index.html" class="block font-bold text-slate-700">Home</a>
+            <a href="about.html" class="block font-bold text-slate-700">About</a>
+            <a href="program-details.html" class="block font-bold text-slate-700">Program Details</a>
+            <a href="gallery.html" class="block font-bold text-slate-700">News</a>
+            <button class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold">Partner with us</button>
+        </div>
+    </nav>
+    <section class="relative h-[300px] flex items-center justify-center bg-navy overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <img src="Assets/Images/Learn.jpeg" class="w-full h-full object-cover">
+        </div>
+        <h1 class="relative z-10 text-white text-5xl font-black">Program Details</h1>
+    </section>
+
+    <section class="py-16 text-center max-w-4xl mx-auto px-6">
+        <img src="Assets/Logos/ICRP.png" class="w-12 h-12 mx-auto mb-4" alt="Icon">
+        <h2 class="text-3xl font-extrabold text-blue-900 mb-4">ICRPlus Program Structure</h2>
+        <p class="text-slate-500 text-lg">We deliver a seamless learning journey that evolves with the student, from
+            foundational logic to professional-grade engineering.</p>
+    </section>
+
+    <section class="relative py-20 border-t border-slate-50">
+        <div class="watermark">01</div>
+        <div class="max-w-7xl mx-auto px-8 relative z-10">
+            <div class="mb-12">
+                <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded text-xs font-bold uppercase">Ages 6-11</span>
+                <h3 class="text-4xl font-extrabold text-blue-900 mt-4">Primary Level</h3>
+                <p class="text-slate-500 mt-2">Where interest meets basic computational thinking.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12 mb-16">
+                <div>
+                    <h4 class="font-bold text-blue-600 flex items-center gap-2 mb-4"><i data-lucide="sparkles"
+                            class="w-5 h-5"></i> Skills Gained</h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li>• Visual Block Coding (Scratch)</li>
+                        <li>• Basic Algorithm Design</li>
+                        <li>• Logical Reasoning</li>
+                        <li>• Introduction to Hardware</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-blue-600 flex items-center gap-2 mb-4"><i data-lucide="book-open"
+                            class="w-5 h-5"></i> Curriculum</h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li>• Creative Computing</li>
+                        <li>• Digital Storytelling</li>
+                        <li>• Robotics Foundations</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-blue-600 flex items-center gap-2 mb-4"><i data-lucide="check-circle"
+                            class="w-5 h-5"></i> Learning Outcomes</h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li>• Confidence in tech tools</li>
+                        <li>• Collaborative problem solving</li>
+                        <li>• Foundational Math/Science links</li>
+                    </ul>
+                </div>
+            </div>
+            <img src="Assets/Images/scratch.jpg" class="w-full h-[500px] object-cover rounded-3xl shadow-xl">
+        </div>
+    </section>
+
+    <section class="relative py-24 bg-slate-50">
+        <div class="watermark" style="left: 40px; right: auto;">02</div>
+        <div class="max-w-7xl mx-auto px-8 relative z-10">
+            <div class="mb-12">
+                <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded text-xs font-bold uppercase">Ages 12-17</span>
+                <h3 class="text-4xl font-extrabold text-blue-900 mt-4">Secondary Level</h3>
+                <p class="text-slate-500 mt-2">Building technical proficiency and engineering mindsets.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12 mb-16">
+                <div>
+                    <h4 class="font-bold text-blue-600 flex items-center gap-2 mb-4"><i data-lucide="code-2"
+                            class="w-5 h-5"></i> Skills Gained</h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li>• C++ and Arduino Programming</li>
+                        <li>• Circuitry & Electronics</li>
+                        <li>• Raspberry Pi Programming</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-blue-600 flex items-center gap-2 mb-4"><i data-lucide="cpu"
+                            class="w-5 h-5"></i> Curriculum</h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li>• Software Development</li>
+                        <li>• Arduino/Microbit Projects</li>
+                        <li>• Data Literacy</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-blue-600 flex items-center gap-2 mb-4"><i data-lucide="target"
+                            class="w-5 h-5"></i> Learning Outcomes</h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li>• Independent Project Creation</li>
+                        <li>• Advanced Design Thinking</li>
+                    </ul>
+                </div>
+            </div>
+            <img src="Assets/Images/Arduino.jpg" class="w-full h-[500px] object-cover rounded-3xl shadow-xl">
+        </div>
+    </section>
+
+    <section class="relative py-24">
+        <div class="watermark">03</div>
+        <div class="max-w-7xl mx-auto px-8 relative z-10">
+            <div class="mb-12">
+                <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded text-xs font-bold uppercase">Tertiary /
+                    Pro</span>
+                <h3 class="text-4xl font-extrabold text-blue-900 mt-4">Advanced Level</h3>
+                <p class="text-slate-500 mt-2">Specialization and industry readiness.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12 mb-16">
+                <div>
+                    <h4 class="font-bold text-blue-600 flex items-center gap-2 mb-4"><i data-lucide="brain"
+                            class="w-5 h-5"></i> Skills Gained</h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li>• Full-stack Development</li>
+                        <li>• AI & Machine Learning</li>
+                        <li>• Advanced Robotics Engineering</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-blue-600 flex items-center gap-2 mb-4"><i data-lucide="briefcase"
+                            class="w-5 h-5"></i> Curriculum</h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li>• Industrial Automation</li>
+                        <li>• Software Engineering Principles</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-blue-600 flex items-center gap-2 mb-4"><i data-lucide="graduation-cap"
+                            class="w-5 h-5"></i> Learning Outcomes</h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li>• Career Portfolio Completion</li>
+                        <li>• Industry Internship Readiness</li>
+                    </ul>
+                </div>
+            </div>
+            <img src="Assets/Images/Machine.jpeg" class="w-full h-[500px] object-cover rounded-3xl shadow-xl">
+        </div>
+    </section>
+
+    <section class="py-20 bg-blue-900 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-8 text-center">
+            <h3 class="text-xl font-bold mb-12 uppercase tracking-widest">Technologies We Use</h3>
+            <div class="flex flex-wrap justify-center gap-8">
+                <div class="flex flex-col items-center gap-3">
+                    <div
+                        class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center border border-white/20">
+                        <img src="https://cdn.simpleicons.org/arduino/white" class="w-8 h-8" alt="Arduino">
+                    </div>
+                    <span class="text-xs font-bold uppercase tracking-wider opacity-80">Arduino</span>
+                </div>
+
+                <div class="flex flex-col items-center gap-3">
+                    <div
+                        class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center border border-white/20">
+                        <img src="https://cdn.simpleicons.org/raspberrypi/white" class="w-8 h-8" alt="Raspberry Pi">
+                    </div>
+                    <span class="text-xs font-bold uppercase tracking-wider opacity-80">Raspberry Pi</span>
+                </div>
+
+                <div class="flex flex-col items-center gap-3">
+                    <div
+                        class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center border border-white/20">
+                        <i data-lucide="circuit-board" class="w-8 h-8"></i>
+                    </div>
+                    <span class="text-xs font-bold uppercase tracking-wider opacity-80">Circuits</span>
+                </div>
+
+                <div class="flex flex-col items-center gap-3">
+                    <div
+                        class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center border border-white/20">
+                        <img src="https://cdn.simpleicons.org/microbit/white" class="w-8 h-8" alt="Micro:bit">
+                    </div>
+                    <span class="text-xs font-bold uppercase tracking-wider opacity-80">Micro:bit</span>
+                </div>
+
+                <div class="flex flex-col items-center gap-3">
+                    <div
+                        class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center border border-white/20">
+                        <i data-lucide="cpu" class="w-8 h-8"></i>
+                    </div>
+                    <span class="text-xs font-bold uppercase tracking-wider opacity-80">Microcontroller</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 text-center">
+        <h2 class="text-4xl font-extrabold text-blue-900 mb-6">Ready to Get Started?</h2>
+        <div class="flex justify-center gap-4">
+            <a href="partner.html" class="bg-blue-600 text-white px-10 py-4 rounded-xl font-bold shadow-lg">Partner with
+                Us</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=blisglobaluganda@gmail.com" target="_blank"
+                class="bg-slate-100 text-slate-700 px-10 py-4 rounded-xl font-bold hover:bg-slate-200 hover:scale-105 transition duration-300 shadow-md">Contact
+                Us</a>
+        </div>
+    </section>
+
+    <script>lucide.createIcons();</script>
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        lucide.createIcons();
+    </script>
+
+</body>
+
+</html>
